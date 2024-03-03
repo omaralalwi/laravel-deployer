@@ -12,8 +12,6 @@ Laravel Deployer: Streamlined Deployment for Laravel and Node.js apps, with Zero
 
 ## Quick Start
 
-![Deploy publish](https://raw.githubusercontent.com/omaralalwi/laravel-deployer/master/public/images/deploy_publish.gif)
-
 - Install package .
 ```php
 composer require omaralalwi/laravel-deployer
@@ -210,6 +208,8 @@ this command will generate the ssh key that you will see in screen:-
 ## Customization
 
 ### Quick Deploy
+
+![Deploy publish](https://raw.githubusercontent.com/omaralalwi/laravel-deployer/master/public/images/deploy_publish.gif)
 
 you can make a quick deploy with default options by running deploy command :
 
