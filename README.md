@@ -13,6 +13,7 @@ Laravel Deployer: Streamlined Deployment for Laravel and Node.js apps, with Zero
 - no need to root user if you do not enable php restart .
 - deploy in specific branch easily .
 - ability to add your own custom extra commands .
+- Deploy laravel with nodejs with many options.
 - Deploy laravel app with nodejs on it as needed .
 - add your own OS command to restart php.
 - check about ssh key , then generate it github if not exists .
