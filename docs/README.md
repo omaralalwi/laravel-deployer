@@ -209,8 +209,7 @@ this command will generate the ssh key that you will see in screen:-
 
 ## Customization
 
-
-### Quick Deploy
+### Quick Deploy (Basic Usige)
 
 by default : the deployment run without customizations .
 
