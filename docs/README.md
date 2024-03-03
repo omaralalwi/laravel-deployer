@@ -355,6 +355,7 @@ you can update extra commands in `config/laravel-deployer.php` file as following
 - deploy in specific branch easily .
 - ability to add your own custom extra commands .
 - Deploy laravel app with nodejs on it as needed .
+- Deploy laravel with nodejs with many options.
 - add your own OS command to restart php.
 - check about ssh key , then generate it github if not exists .
 - support all php and laravel versions.
