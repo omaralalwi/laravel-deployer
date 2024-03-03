@@ -1,10 +1,6 @@
 # Laravel deployer (Streamlined Deployment for Laravel apps)
 
-<p align="center">
-  <a href="https://omaralalwi.github.io/laravel-deployer" target="_blank">
-      ![Deploy publish](https://raw.githubusercontent.com/omaralalwi/laravel-deployer/master/public/images/deploy_publish.gif)
-  </a>
-</p>
+![Deploy publish](https://raw.githubusercontent.com/omaralalwi/laravel-deployer/master/public/images/deploy_publish.gif)
 
 Laravel Deployer: Streamlined Deployment for Laravel and Node.js apps, with Zero-Downtime and various environments and branches, deploying your Laravel apps become simple and stress-free endeavor.
 
