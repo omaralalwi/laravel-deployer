@@ -129,10 +129,10 @@ These environment configuration variables are used to customize the deployment p
   **if `DEPLOY_RESTART_PHP_FPM` is `false` you do not need for this**.
 
  - Command to restart PHP-FPM (if applicable).
-- **Default Value:** `"sudo systemctl restart php7.4-fpm.service"`
+- **Default Value:** null
 - **Example:**
   ```dotenv
-  DEPLOY_RESTART_PHP_FPM_COMMAND="sudo systemctl restart php8.0-fpm.service"
+  DEPLOY_RESTART_PHP_FPM_COMMAND="sudo systemctl restart php8.1-fpm.service"
   ```
 
 `DEPLOY_SUDO_USER`
