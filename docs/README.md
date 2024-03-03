@@ -55,13 +55,11 @@ php artisan vendor:publish --tag=laravel-deployer-config
 
 ## Configuration
 
-### Environment Variables
-
 You can configure Laravel deployer by adding the following default configuration keys to your `.env` file. If you do not add these, the default values will be used.
 
 These environment configuration variables are used to customize the deployment process in Laravel Deployer.
 
-#### summarize Environment Variables
+### summarize Environment Variables
 
 | Variable Name                | Required                                 | Description                                                                                     | Default Value                           |
 |------------------------------|------------------------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------|
@@ -75,9 +73,9 @@ These environment configuration variables are used to customize the deployment p
 | `DEPLOY_SUDO_USER_PASSWORD`  | Only if `DEPLOY_RESTART_PHP_FPM` is `true` | Password for the sudo user (if applicable).                                                    | `"your system user password"`           |
 
 
-#### Environment Variables in Details
+### Environment Variables in Details
 
-###### DEPLOY_BRANCH
+##### DEPLOY_BRANCH
 
 - The Git branch to be deployed. Default Value `"master"`
 - **Default Value:** `master`
@@ -87,7 +85,7 @@ These environment configuration variables are used to customize the deployment p
     ```
  - **also you can override the default value in env by passing branch with deploy command**. see customization section.
 
-###### DEPLOY_PATH
+##### DEPLOY_PATH
 
 - Path to the root directory of your Laravel project on the server.
 - **Default Value:** `project directory in linux` but in other os you should set it manually in ENV, just write `pwd` while you in root project directory and take it copy past.
@@ -97,7 +95,7 @@ These environment configuration variables are used to customize the deployment p
       DEPLOY_PATH="/home/forge/laravel-deployer.com"
     ```
 
-###### DEPLOY_BUILD_NPM
+##### DEPLOY_BUILD_NPM
 
 - Whether to run npm build commands during deployment.
 - **Default Value:** `false`
@@ -107,7 +105,7 @@ These environment configuration variables are used to customize the deployment p
     ```
 - **more options about custom nodejs commands , in Customization Section**.
 
-###### DEPLOY_RESTART_HORIZON
+##### DEPLOY_RESTART_HORIZON
 
 - Whether to restart Laravel Horizon after deployment.
 - **Default Value:** `false`
@@ -116,7 +114,7 @@ These environment configuration variables are used to customize the deployment p
   DEPLOY_RESTART_HORIZON=true
   ```
 
-###### DEPLOY_RESTART_PHP_FPM
+##### DEPLOY_RESTART_PHP_FPM
 
 - Whether to restart PHP-FPM after deployment(Require user with Root access).
 - **Default Value:** `false`
@@ -125,7 +123,7 @@ These environment configuration variables are used to customize the deployment p
   DEPLOY_RESTART_PHP_FPM=false
   ```
 
-###### DEPLOY_RESTART_PHP_FPM_COMMAND
+##### DEPLOY_RESTART_PHP_FPM_COMMAND
 
   **if `DEPLOY_RESTART_PHP_FPM` is `false` you do not need for this**.
 
@@ -136,7 +134,7 @@ These environment configuration variables are used to customize the deployment p
   DEPLOY_RESTART_PHP_FPM_COMMAND="sudo systemctl restart php8.0-fpm.service"
   ```
 
-###### DEPLOY_SUDO_USER
+##### DEPLOY_SUDO_USER
 
   **if `DEPLOY_RESTART_PHP_FPM` is `false` you do not need for this**.
 
@@ -146,7 +144,7 @@ These environment configuration variables are used to customize the deployment p
   DEPLOY_SUDO_USER="your-system-user"
   ```
 
-###### DEPLOY_SUDO_USER_PASSWORD
+##### DEPLOY_SUDO_USER_PASSWORD
 
   **if `DEPLOY_RESTART_PHP_FPM` is `false` you do not need for this**.
 
@@ -209,7 +207,7 @@ this command will generate the ssh key that you will see in screen:-
 
 ## Customization
 
-### Quick Deploy (Basic Usige)
+### Quick Deploy (Basic Usage)
 
 by default : the deployment run without customizations .
 
