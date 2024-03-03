@@ -1,4 +1,4 @@
-# Laravel deployer (Streamlined Deployment for Laravel apps)
+# Streamlined Deployment for Laravel apps
 
 ![Deploy publish](https://raw.githubusercontent.com/omaralalwi/laravel-deployer/master/public/images/deploy_publish.gif)
 

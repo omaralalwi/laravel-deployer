@@ -1,4 +1,5 @@
-# Laravel deployer (Streamlined Deployment for Laravel apps)
+# Laravel deployer
+(Streamlined Deployment for Laravel apps)
 
 ## Introduction
 
@@ -72,110 +73,6 @@ These environment configuration variables are used to customize the deployment p
 | `DEPLOY_SUDO_USER`           | Only if `DEPLOY_RESTART_PHP_FPM` is `true` | User for executing sudo commands during deployment.                                             | `"your system user"`                    |
 | `DEPLOY_SUDO_USER_PASSWORD`  | Only if `DEPLOY_RESTART_PHP_FPM` is `true` | Password for the sudo user (if applicable).                                                    | `"your system user password"`           |
 
-
-### Environment Variables in Details
-
-`DEPLOY_BRANCH`
-
-- The Git branch to be deployed. Default Value `"master"`
-- **Default Value:** `master`
-- **Example:**
-    ```dotenv
-    DEPLOY_BRANCH="main"
-    ```
- - **also you can override the default value in env by passing branch with deploy command**. see customization section.
-
-`DEPLOY_PATH`
-
-- Path to the root directory of your Laravel project on the server.
-- **Default Value:** `project directory in linux` but in other os you should set it manually in ENV, just write `pwd` while you in root project directory and take it copy past.
-  or any similar commands that show current path in other OS (windows , mac).
-- **Example:**
-    ```dotenv
-      DEPLOY_PATH="/home/forge/laravel-deployer.com"
-    ```
-
-`DEPLOY_BUILD_NPM`
-
-- Whether to run npm build commands during deployment.
-- **Default Value:** `false`
-- **Example:**
-    ```dotenv
-    DEPLOY_BUILD_NPM=true
-    ```
-- **more options about custom nodejs commands , in Customization Section**.
-
-`DEPLOY_RESTART_HORIZON`
-
-- Whether to restart Laravel Horizon after deployment.
-- **Default Value:** `false`
-- **Example:**
-  ```dotenv
-  DEPLOY_RESTART_HORIZON=true
-  ```
-
-`DEPLOY_RESTART_PHP_FPM`
-
-- Whether to restart PHP-FPM after deployment(Require user with Root access).
-- **Default Value:** `false`
-- **Example:**
-  ```dotenv
-  DEPLOY_RESTART_PHP_FPM=false
-  ```
-
-`DEPLOY_RESTART_PHP_FPM_COMMAND`
-
-  **if `DEPLOY_RESTART_PHP_FPM` is `false` you do not need for this**.
-
- - Command to restart PHP-FPM (if applicable).
-- **Default Value:** `"sudo systemctl restart php7.4-fpm.service"`
-- **Example:**
-  ```dotenv
-  DEPLOY_RESTART_PHP_FPM_COMMAND="sudo systemctl restart php8.0-fpm.service"
-  ```
-
-`DEPLOY_SUDO_USER`
-
-  **if `DEPLOY_RESTART_PHP_FPM` is `false` you do not need for this**.
-
-  - User for executing sudo commands during deployment.
-- **Example:**
-  ```dotenv
-  DEPLOY_SUDO_USER="your-system-user"
-  ```
-
-`DEPLOY_SUDO_USER_PASSWORD`
-
-  **if `DEPLOY_RESTART_PHP_FPM` is `false` you do not need for this**.
-
-  
-- Password for the sudo user (if applicable).
-
-- **Example:**
-  ```dotenv
-  DEPLOY_SUDO_USER_PASSWORD="your-system-user-password"
-  ```
-
-all configuration variables in ENV file will look like :
-```dotenv
-DEPLOY_BRANCH="master"
-DEPLOY_PATH="/project/root directory"
-DEPLOY_BUILD_NPM=false
-DEPLOY_RESTART_HORIZON=false
-DEPLOY_RESTART_PHP_FPM=false
-DEPLOY_RESTART_PHP_FPM_COMMAND="sudo systemctl restart php8.1-fpm.service"
-DEPLOY_SUDO_USER="your system user"
-DEPLOY_SUDO_USER_PASSWORD="your system user password"
-```
-
-
-These environment variables provide flexibility in configuring the deployment behavior for your Laravel application.
-
-
-**Final Note**: do not forget to clear config and cache after any update for config file or ENV variables .
-```php
-php artisan config:clear && php artisan cache:clear
-```
 
 ## Setup github SSH connection
 
