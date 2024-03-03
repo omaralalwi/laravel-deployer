@@ -19,10 +19,12 @@ composer require omaralalwi/laravel-deployer
 
 - setup github connection 
 if you ready did this, no need to do it again, else you can run following command to generate ssh key in your server to use it is your github account:
+
 ```php
 php artisan deploy:key-generate your_girhub_email@domain.com
 ```
 - update Env file configs as needed
+
 ```dotenv
 DEPLOY_BRANCH="master"
 DEPLOY_PATH="/project/root directory"
