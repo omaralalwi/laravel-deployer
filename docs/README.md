@@ -62,16 +62,16 @@ These environment configuration variables are used to customize the deployment p
 
 ### summarize Environment Variables
 
-| Variable Name                | Required                                 | Description                                                                                     | Default Value                           |
-|------------------------------|------------------------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------|
-| `DEPLOY_BRANCH`              | Yes                                      | The Git branch to be deployed.                                                                  | `"master"`                              |
-| `DEPLOY_PATH`                | Yes                                      | Path to the root directory of your Laravel project on the server.                                | `/project/root directory`               |
-| `DEPLOY_BUILD_NPM`           | No                                       | Whether to run npm build commands during deployment.                                             | `false`                                 |
-| `DEPLOY_RESTART_HORIZON`     | No                                       | Whether to restart Laravel Horizon after deployment.                                             | `false`                                 |
-| `DEPLOY_RESTART_PHP_FPM`     | No                                       | Whether to restart PHP-FPM after deployment.                                                     | `false`                                 |
-| `DEPLOY_RESTART_PHP_FPM_COMMAND` | Only if `DEPLOY_RESTART_PHP_FPM` is `true` | Command to restart PHP-FPM (if applicable).                                                 | `"sudo systemctl restart php7.4-fpm.service"` |
-| `DEPLOY_SUDO_USER`           | Only if `DEPLOY_RESTART_PHP_FPM` is `true` | User for executing sudo commands during deployment.                                             | `"your system user"`                    |
-| `DEPLOY_SUDO_USER_PASSWORD`  | Only if `DEPLOY_RESTART_PHP_FPM` is `true` | Password for the sudo user (if applicable).                                                    | `"your system user password"`           |
+| Variable Name                | Required                                 | Description                                                                                     | Default Value                                 |
+|------------------------------|------------------------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| `DEPLOY_BRANCH`              | Yes                                      | The Git branch to be deployed.                                                                  | `"master"`                                    |
+| `DEPLOY_PATH`                | Yes                                      | Path to the root directory of your Laravel project on the server.                                | `/project/root directory`                     |
+| `DEPLOY_BUILD_NPM`           | No                                       | Whether to run npm build commands during deployment.                                             | `false`                                       |
+| `DEPLOY_RESTART_HORIZON`     | No                                       | Whether to restart Laravel Horizon after deployment.                                             | `false`                                       |
+| `DEPLOY_RESTART_PHP_FPM`     | No                                       | Whether to restart PHP-FPM after deployment.                                                     | `false`                                       |
+| `DEPLOY_RESTART_PHP_FPM_COMMAND` | Only if `DEPLOY_RESTART_PHP_FPM` is `true` | Command to restart PHP-FPM (if applicable).                                                 | `"sudo systemctl restart php8.1-fpm.service"` |
+| `DEPLOY_SUDO_USER`           | Only if `DEPLOY_RESTART_PHP_FPM` is `true` | User for executing sudo commands during deployment.                                             | `"your system user"`                          |
+| `DEPLOY_SUDO_USER_PASSWORD`  | Only if `DEPLOY_RESTART_PHP_FPM` is `true` | Password for the sudo user (if applicable).                                                    | `"your system user password"`                 |
 
 
 ### Environment Variables in Details
