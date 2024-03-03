@@ -212,6 +212,8 @@ this command will generate the ssh key that you will see in screen:-
 
 ### Quick Deploy
 
+by default : the deployment run without customizations .
+
 ![Deploy publish](https://raw.githubusercontent.com/omaralalwi/laravel-deployer/master/public/images/deploy_publish.gif)
 
 you can make a quick deploy with default options by running deploy command :
