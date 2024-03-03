@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://omaralalwi.github.io/laravel-deployer" target="_blank">
-      ![Generate SSH key](https://raw.githubusercontent.com/omaralalwi/laravel-deployer/master/public/images/deploy_publish.gif)
+      ![Deploy publish](https://raw.githubusercontent.com/omaralalwi/laravel-deployer/master/public/images/deploy_publish.gif)
   </a>
 </p>
 
