@@ -1,5 +1,11 @@
 # Streamlined Deployment for Laravel apps
 
+<p align="center">
+  <a href="https://omaralalwi.github.io/laravel-deployer" target="_blank">
+    <img src="https://raw.githubusercontent.com/omaralalwi/laravel-deployer/master/public/images/deployer.jpg" alt="Laravel Deployer">
+  </a>
+</p>
+
 ![Deploy publish](https://raw.githubusercontent.com/omaralalwi/laravel-deployer/master/public/images/deploy_publish.gif)
 
 ![Generate SSH key](https://raw.githubusercontent.com/omaralalwi/laravel-deployer/master/public/images/generate_new_ssh_key.gif)
